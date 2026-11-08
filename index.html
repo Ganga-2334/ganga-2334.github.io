@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="Portfolio of Ganga P Gopan, a Computer Science (Artificial Intelligence) undergraduate interested in UI/UX, AI, IoT, and cybersecurity.">
+  <title>Ganga P Gopan — AI, UI/UX & IoT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f6f5f0;--ink:#20221e;--muted:#77786e;--line:#deded5;--green:#c7ee67;--purple:#dcd5ff;--orange:#f7ad7c;--white:#fffefa;--mono:"DM Mono",monospace;--sans:"DM Sans",sans-serif;--display:"Manrope",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}
+    .nav{height:80px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:800 15px var(--display);letter-spacing:-.04em}.brand i{display:inline-block;width:9px;height:9px;background:#83a92d;border-radius:50%;margin-right:8px}.navlinks{display:flex;gap:30px;font-size:13px;color:#62645c}.navlinks a:hover,.textlink:hover{color:#58751c}
+    .hero{padding:90px 0 80px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px}.eyebrow,.label{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:#77786e}.eyebrow{display:flex;align-items:center;gap:9px}.eyebrow:before{content:"";width:20px;height:1px;background:#8ba53a}
+    h1{font:700 clamp(48px,7.1vw,82px)/.99 var(--display);letter-spacing:-.075em;margin:24px 0 22px;max-width:680px}h1 span{color:#718c32}.intro{font-size:17px;color:#66685f;max-width:510px;line-height:1.75}.actions{display:flex;align-items:center;gap:23px;margin-top:30px}.button{background:var(--ink);color:white;padding:13px 18px;border-radius:5px;font-size:13px;font-weight:600;transition:transform .2s}.button:hover{transform:translateY(-2px)}.textlink{font-size:13px;font-weight:600}
+    .hero-art{position:relative;min-height:370px;border-radius:11px;background:#e9e8df;overflow:hidden;display:grid;place-items:center}.hero-art:before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--green);top:54px;left:calc(50% - 125px)}.hero-art:after{content:"";position:absolute;width:165px;height:165px;border:1px solid rgba(32,34,30,.18);border-radius:50%;top:98px;left:calc(50% - 120px)}
+    .orbit{position:absolute;width:310px;height:190px;border:1px solid rgba(32,34,30,.24);border-radius:50%;transform:rotate(-30deg);z-index:1}.orbit:before{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:#20221e;top:16px;left:51px}.orbit:after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#20221e;bottom:25px;right:30px}
+    .monogram{position:relative;z-index:2;font:800 110px/.9 var(--display);letter-spacing:-.12em;padding-right:14px}.art-tag{position:absolute;z-index:3;background:var(--white);padding:9px 12px;border-radius:4px;font:10px var(--mono);box-shadow:0 4px 20px #20221e12}.tag-a{top:37px;right:25px}.tag-b{bottom:49px;left:19px}.art-note{position:absolute;bottom:18px;right:20px;font:10px var(--mono);color:#6d6f66}
+    .section{padding:74px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:34px}.section-head h2{font:700 38px/1.1 var(--display);letter-spacing:-.06em;margin:10px 0 0}.section-head p{font-size:13px;color:var(--muted);max-width:280px;margin:0}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{background:var(--white);border:1px solid #e9e8e0;border-radius:8px;padding:24px;min-height:265px;display:flex;flex-direction:column;position:relative;overflow:hidden}.project:first-child{grid-row:span 2;min-height:546px;background:#e7eddb}.project:last-child{background:#f3e4d9}.project-top{display:flex;justify-content:space-between;align-items:center}.project-type{font:10px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:#6d7065}.project-no{font:11px var(--mono);color:#87897e}.project h3{font:700 25px/1.2 var(--display);letter-spacing:-.05em;margin:26px 0 10px;max-width:390px}.project p{font-size:14px;color:#66685f;max-width:450px;margin:0;line-height:1.7}.project-foot{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:24px}.chip{border:1px solid #c9cbbf;padding:6px 9px;border-radius:3px;font:10px var(--mono);color:#55574e}.visual{height:190px;position:relative;margin:28px 0 20px}.project:first-child .visual{height:245px}.sensor-card{position:absolute;background:#faf9f4;border:1px solid #d4d9c9;border-radius:7px;padding:15px;box-shadow:0 8px 22px #32371c12}.sensor-card.a{width:62%;left:4%;top:12px}.sensor-card.b{width:48%;right:1%;bottom:0;background:#20221e;color:#f6f5f0;border:0}.sensor-label{font:9px var(--mono);color:#83867a}.sensor-value{font:700 25px var(--display);margin-top:4px}.sensor-line{height:28px;margin-top:9px;background:linear-gradient(160deg,transparent 43%,#83a92d 45%,#83a92d 48%,transparent 50%);border-bottom:1px solid #d4d9c9}.dots{display:flex;gap:6px;margin-top:12px}.dots i{width:6px;height:6px;background:#c7ee67;border-radius:50%}
+    .voice-visual,.alert-visual{height:115px;display:flex;align-items:center;justify-content:center;gap:8px}.voice-visual i{display:block;width:5px;border-radius:6px;background:#8e7ed0}.voice-visual i:nth-child(1),.voice-visual i:nth-child(11){height:17px}.voice-visual i:nth-child(2),.voice-visual i:nth-child(10){height:33px}.voice-visual i:nth-child(3),.voice-visual i:nth-child(9){height:53px}.voice-visual i:nth-child(4),.voice-visual i:nth-child(8){height:73px}.voice-visual i:nth-child(5),.voice-visual i:nth-child(7){height:91px}.voice-visual i:nth-child(6){height:66px}
+    .alert-visual .circle{width:105px;height:105px;border:1px solid #c58e6f;border-radius:50%;display:grid;place-items:center;position:relative}.alert-visual .circle:before,.alert-visual .circle:after{content:"";position:absolute;border:1px solid #c58e6f;border-radius:50%}.alert-visual .circle:before{inset:10px}.alert-visual .circle:after{inset:23px}.alert-visual b{z-index:1;font:10px var(--mono)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about-copy{font-size:16px;line-height:1.85;color:#5f6159;max-width:520px}.about-copy strong{color:var(--ink);font-weight:600}.interest-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.interest{background:var(--green);border-radius:3px;padding:7px 11px;font:10px var(--mono)}.interest:nth-child(2){background:var(--purple)}.interest:nth-child(3){background:#f8d2b9}.interest:nth-child(4){background:#e5e4dc}
+    .timeline{border-top:1px solid var(--line)}.item{display:grid;grid-template-columns:145px 1fr;gap:22px;padding:22px 0;border-bottom:1px solid var(--line)}.date{font:11px var(--mono);color:#77786e;padding-top:3px}.item h3{font:600 16px var(--display);letter-spacing:-.02em;margin:0 0 5px}.item p{font-size:13px;color:#71736a;margin:0;line-height:1.65}.item .meta{font:10px var(--mono);color:#8a8b80;margin-top:8px}
+    .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:20px;background:var(--white);border:1px solid #e9e8e0;border-radius:6px}.skill h3{font:600 13px var(--display);margin:0 0 12px}.skill p{font-size:12px;line-height:1.8;color:#707269;margin:0}
+    .contact{background:var(--ink);color:#f6f5f0;border-radius:9px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact .label{color:#c4c6b9}.contact h2{font:700 37px/1.1 var(--display);letter-spacing:-.06em;margin:12px 0}.contact p{font-size:13px;color:#c0c1b7;margin:0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.contact-links a{border:1px solid #62655a;border-radius:4px;padding:10px 13px;font-size:12px}.contact-links a:hover{background:#363932}
+    footer{display:flex;justify-content:space-between;padding:28px 0 38px;color:#85867c;font:10px var(--mono)}.footer-links{display:flex;gap:18px}
+    @media(max-width:760px){.wrap{width:min(100% - 32px,560px)}.nav{height:68px}.navlinks{gap:15px;font-size:12px}.navlinks a:nth-child(3){display:none}.hero{padding:58px 0 50px;grid-template-columns:1fr;gap:35px}.hero-art{min-height:300px}.monogram{font-size:90px}.section{padding:55px 0}.section-head{align-items:start;gap:15px;flex-direction:column}.section-head h2{font-size:32px}.projects{grid-template-columns:1fr}.project:first-child{grid-row:auto;min-height:470px}.project{min-height:285px}.about-grid{grid-template-columns:1fr;gap:28px}.skills{grid-template-columns:repeat(2,1fr)}.contact{padding:30px;align-items:flex-start;flex-direction:column}.contact h2{font-size:31px}.contact-links a{padding:9px 11px}footer{gap:15px;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#top"><i></i>GANGA P GOPAN</a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#work">Projects</a><a href="#about">About</a><a href="#journey">Journey</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">AI undergraduate · UI/UX enthusiast</div>
+        <h1>Curious by nature.<br><span>Thoughtful by design.</span></h1>
+        <p class="intro">I’m Ganga, a Computer Science (Artificial Intelligence) undergraduate exploring how technology, connected devices, and user-centred design can solve practical problems.</p>
+        <div class="actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="textlink" href="#about">A little about me</a></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract orbit illustration with Ganga's initials"><div class="orbit"></div><span class="monogram">GP</span><span class="art-tag tag-a">IDEAS → PROTOTYPES</span><span class="art-tag tag-b">LEARN · MAKE · REFINE</span><span class="art-note">A work in progress, by design.</span></div>
+    </section>
+    <section class="section" id="work"><div class="wrap">
+      <div class="section-head"><div><div class="label">01 / Selected work</div><h2>Projects & explorations</h2></div><p>Student concepts and collaborative work, described as they appear in my resume.</p></div>
+      <div class="projects">
+        <article class="project"><div class="project-top"><span class="project-type">IoT · Monitoring concept</span><span class="project-no">01</span></div><div class="visual" aria-hidden="true"><div class="sensor-card a"><div class="sensor-label">GROWING CONDITIONS</div><div class="sensor-value">Mushroom monitor</div><div class="sensor-line"></div></div><div class="sensor-card b"><div class="sensor-label">SENSOR STATUS</div><div class="sensor-value">Monitoring</div><div class="dots"><i></i><i></i><i></i></div></div></div><h3>Smart Mushroom Cultivation Monitoring System</h3><p>A proposed IoT system combining ESP32-CAM image capture and environmental sensors to monitor mushroom-growing conditions.</p><div class="project-foot"><span class="chip">ESP32-CAM</span><span class="chip">Environmental sensors</span><span class="chip">IoT</span></div></article>
+        <article class="project"><div class="project-top"><span class="project-type">Hackathon · Concept</span><span class="project-no">02</span></div><div class="voice-visual" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><h3>SafeSpeak</h3><p>Contributed to a HACK’P 2026 concept focused on urgency classification and multilingual support. The team was a semi-finalist.</p><div class="project-foot"><span class="chip">Urgency classification</span><span class="chip">Multilingual support</span></div></article>
+        <article class="project"><div class="project-top"><span class="project-type">Sensor · Alert concept</span><span class="project-no">03</span></div><div class="alert-visual" aria-hidden="true"><div class="circle"><b>DETECT</b></div></div><h3>Smart Alcohol and Illness Detection System</h3><p>A concept combining sensor inputs and alerts to support early detection and timely response.</p><div class="project-foot"><span class="chip">Sensors</span><span class="chip">Alerts</span><span class="chip">Concept</span></div></article>
+      </div>
+    </div></section>
+    <section class="section" id="about"><div class="wrap about-grid">
+      <div><div class="label">02 / About</div><h2 class="section-head" style="display:block;margin:10px 0 0"><span style="font:700 38px/1.1 var(--display);letter-spacing:-.06em">Technology with people in mind.</span></h2></div>
+      <div class="about-copy">I’m studying <strong>Computer Science (Artificial Intelligence)</strong> and enjoy learning by making. My interests span AI, IoT prototyping, cybersecurity, and UI/UX. I’m especially drawn to translating a practical problem into a clear, thoughtful digital or hardware experience.<div class="interest-row"><span class="interest">Artificial Intelligence</span><span class="interest">UI/UX</span><span class="interest">IoT</span><span class="interest">Cybersecurity</span></div></div>
+    </div></section>
+    <section class="section" id="journey"><div class="wrap">
+      <div class="section-head"><div><div class="label">03 / Experience & education</div><h2>Learning in practice</h2></div></div>
+      <div class="timeline">
+        <article class="item"><div class="date">JUN–JUL 2025</div><div><h3>UI/UX Intern · Cognifyz Technologies</h3><p>Practical exposure to UI/UX workflows, design thinking, and creating clear, user-focused digital interfaces.</p></div></article>
+        <article class="item"><div class="date">JUN 2026</div><div><h3>Robotics & IoT Practical Experience · QNAYDS LLP</h3><p>Practical learning activities around robotics and IoT concepts, with hardware-oriented problem-solving.</p></div></article>
+        <article class="item"><div class="date">2023–2027</div><div><h3>B.Tech, Computer Science (Artificial Intelligence)</h3><p>Mar Baselios Christian College of Engineering and Technology, Peermade · APJ Abdul Kalam Technological University</p></div></article>
+      </div>
+    </div></section>
+    <section class="section"><div class="wrap">
+      <div class="section-head"><div><div class="label">04 / Toolkit</div><h2>Things I’m learning and using</h2></div></div>
+      <div class="skills">
+        <article class="skill"><h3>Programming & AI</h3><p>Python<br>Artificial intelligence<br>Image processing</p></article>
+        <article class="skill"><h3>Design & tools</h3><p>Figma<br>Wireframing & prototyping<br>Jupyter Notebook · Git · GitHub</p></article>
+        <article class="skill"><h3>Hardware & IoT</h3><p>ESP32 · ESP32-CAM<br>Sensors<br>Data collection & monitoring</p></article>
+        <article class="skill"><h3>Security & teamwork</h3><p>Cybersecurity fundamentals<br>Analytical thinking<br>Problem-solving · teamwork</p></article>
+      </div>
+    </div></section>
+    <section class="section" id="contact"><div class="wrap contact">
+      <div><div class="label">05 / Find me online</div><h2>Let’s stay connected.</h2><p>Interested in thoughtful design and practical technology.</p></div>
+      <div class="contact-links"><a href="https://www.linkedin.com/in/ganga-p-gopan" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/Ganga-2334" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+    </div></section>
+  </main>
+  <footer class="wrap"><span>© <span id="year"></span> Ganga P Gopan</span><div class="footer-links"><a href="#top">Back to top ↑</a><span>Made with curiosity.</span></div></footer>
+  <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body>
+</html>
